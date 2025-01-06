@@ -6,7 +6,7 @@ This is a Hotel Room Booking web application built with Angular for the frontend
 
 - Node.js (v20.14.0)
 - npm (10.8.1)
-- Angular CLI (v18.2.13)
+- Angular (v18.2.13)
 - Important Note : The Angular CLI requires a minimum Node.js version of v18.19
   
 ## Getting Started
