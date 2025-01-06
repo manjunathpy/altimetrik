@@ -37,6 +37,15 @@
         "checkInDate": "2025-01-07",
         "checkOutDate": "2025-01-08",
         "id": 2
+      },
+      {
+        "hotelId": 2,
+        "userName": "Arjun",
+        "userAddress": "Bengaluru",
+        "numberOfRooms": 2,
+        "checkInDate": "2025-01-15",
+        "checkOutDate": "2025-01-16",
+        "id": 3
       }
     ]
   },
