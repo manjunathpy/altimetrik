@@ -14,14 +14,14 @@ This is a Hotel Room Booking web application built with Angular for the frontend
 ### Setting Up the Backend
 
 1. **Clone the repository:**
-   git clone https://github.com/manjunathpy/altimetrik.git
-   cd altimetric
-   git checkout master
+  - git clone https://github.com/manjunathpy/altimetrik.git
+  - cd altimetric
+  -  git checkout master
 2. **frontend setup**
-   cd frontend
-   npm i 
-   ng serve -o
+  - cd frontend
+  - npm i 
+  - ng serve -o
 3. **backend setup**
-   cd backend
-   npm i 
-   npm start
+  - cd backend
+  - npm i 
+  - npm start
