@@ -1,0 +1,58 @@
+<div class="container mt-4">
+    <h2>My Bookings</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let booking of bookings">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <strong>Name: </strong>{{ booking.userName }}<br>
+            <strong>Number of rooms booked: </strong> {{ booking.numberOfRooms }}<br>
+            <strong>Check-in Date:&nbsp;</strong>
+                <small>{{ booking.checkInDate }}</small> <br>
+            <strong>Check-out Date:&nbsp;</strong>
+                <small>{{ booking.checkOutDate }}</small>
+          </div>
+          <div>
+            <button class="btn btn-warning btn-sm" (click)="editBooking(booking)">Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="cancelBooking(booking)">Cancel</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedBooking" class="modal fade show" style="display: block;" tabindex="-1" aria-labelledby="editBookingModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editBookingModalLabel">Edit Booking</h5>
+          </div>
+          <div class="modal-body">
+            <form (ngSubmit)="saveBooking()">
+              <div class="form-group">
+                <label for="userName">Name:</label>
+                <input type="text" class="form-control" id="userName" [(ngModel)]="selectedBooking.userName" name="userName" required />
+              </div>
+              <div class="form-group">
+                <label for="userAddress">Address:</label>
+                <input type="text" class="form-control" id="userAddress" [(ngModel)]="selectedBooking.userAddress" name="userAddress" required />
+              </div>
+              <div class="form-group">
+                <label for="numberOfRooms">Number of Rooms:</label>
+                <input type="number" class="form-control" id="numberOfRooms" [(ngModel)]="selectedBooking.numberOfRooms" name="numberOfRooms" required />
+              </div>
+              <div class="form-group">
+                <label for="checkInDate">Check-in Date:</label>
+                <input type="date" class="form-control" id="checkInDate" [(ngModel)]="selectedBooking.checkInDate" name="checkInDate" required />
+              </div>
+              <div class="form-group"  style="margin-bottom: 10px;">
+                <label for="checkOutDate">Check-out Date:</label>
+                <input type="date" class="form-control" id="checkOutDate" [(ngModel)]="selectedBooking.checkOutDate" name="checkOutDate" required />
+              </div>
+              <button type="submit" class="btn btn-primary mr">Save Changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close" (click)="closeEdit()">Close</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

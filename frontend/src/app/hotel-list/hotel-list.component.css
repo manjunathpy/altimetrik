@@ -1,0 +1,20 @@
+.card {
+  margin: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.list-group-item{
+  cursor: pointer; 
+}
+
+.custom{
+  float: right;
+  margin-top: 0;
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Hotel Sunshine",
+    "location": "New York",
+    "bookings": [
+      {
+        "hotelId": 1,
+        "userName": "Manoj P Y",
+        "userAddress": "BG Road, Bengaluru",
+        "numberOfRooms": 2,
+        "checkInDate": "2025-01-06",
+        "checkOutDate": "2025-01-16",
+        "id": 1
+      },
+      {
+        "hotelId": 1,
+        "userName": "Sam",
+        "userAddress": "Bengaluru",
+        "numberOfRooms": 2,
+        "checkInDate": "2025-01-08",
+        "checkOutDate": "2025-01-08",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ocean View",
+    "location": "Los Angeles",
+    "bookings": [
+      {
+        "hotelId": 2,
+        "userName": "Arun",
+        "userAddress": "Chennai",
+        "numberOfRooms": 1,
+        "checkInDate": "2025-01-07",
+        "checkOutDate": "2025-01-08",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mountain Retreat",
+    "location": "Denver",
+    "bookings": []
+  },
+  {
+    "id": 4,
+    "name": "City Lights",
+    "location": "Chicago",
+    "bookings": []
+  },
+  {
+    "id": 5,
+    "name": "Desert Oasis",
+    "location": "Phoenix",
+    "bookings": []
+  }
+]

@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files (sensitive information)
+.env
+*.env
+.env.*
+.local
+*.local
+
+# Build artifacts
+build/
+dist/
+out/
+.parcel-cache
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*~
+*.bak
+*.tmp
+
+# Mac files
+.AppleDouble
+
+# Optional: If you use specific bundlers or frameworks
+# Example for Create React App
+build/
+
+# Example for Angular
+dist/
+
+# Example for Vue.js
+dist/
+
+# Example for specific files
+# config/database.yml
